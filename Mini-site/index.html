@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site</title>
+    <style>
+    
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            padding: 40px 20px; 
+            background-color: #1a1a2e; 
+            display: flex;
+            justify-content: center;
+        }
+        
+   
+        .container { 
+            width: 100%;
+            max-width: 450px; 
+            background: #16213e;
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        }
+        
+        h2 { color: #4ecca3; text-align: center; margin-bottom: 25px; }
+        h3 { color: #00adb5; border-bottom: 1px solid #393e46; padding-bottom: 10px; }
+
+    
+        .input-group { margin-bottom: 15px; }
+        
+        label { display: block; margin-bottom: 5px; color: #bdc3c7; font-size: 14px; }
+
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            border: 2px solid #0f3460;
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            background-color: #1a1a2e; 
+            color: #00adb5;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+        
+        input:focus { border-color: #4ecca3; }
+
+    
+        .btn-add { 
+            width: 100%; 
+            padding: 14px; 
+            background-color: #4ecca3; 
+            color: #1a1a2e; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        
+        .btn-clear { 
+            width: 100%; 
+            padding: 10px; 
+            background-color: transparent; 
+            color: #e94560; 
+            border: 2px solid #e94560; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        
+        button:hover { opacity: 0.8; transform: scale(0.98); }
+
+       
+        #resumo { margin-top: 30px; }
+        
+        #lista-itens p {
+            background: #0f3460;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .total { 
+            font-weight: bold; 
+            font-size: 1.4em; 
+            margin-top: 20px; 
+            color: #f8b500; 
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Meu Site</h2>
+        
+        <div class="input-group">
+            <label>Produto:</label>
+            <input type="text" id="nome" placeholder="Ex: Camiseta">
+        </div>
+
+        <div class="input-group">
+            <label>Preço (R$):</label>
+            <input type="number" id="preco" placeholder="0.00">
+        </div>
+
+        <button class="btn-add" onclick="adicionar()">Adicionar ao Carrinho</button>
+
+        <div id="resumo">
+            <h3>Carrinho</h3>
+            <div id="lista-itens">
+                <p style="background:none; justify-content:center;">Vazio</p>
+            </div>
+            <p class="total">Total: R$ <span id="valor-total">0.00</span></p>
+        </div>
+
+        <button class="btn-clear" onclick="limpar()">Esvaziar Carrinho</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
