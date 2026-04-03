@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Minha Garagem</h1>
+        <p>Clique no veículo para ver os detalhes:</p>
+        
+        <div class="menu-veiculos">
+            <button onclick="mostrarInfo('carro')">🚗 Corolla</button>
+            <button onclick="mostrarInfo('moto1')">🏍 CB 500</button>
+            <button onclick="mostrarInfo('moto2')">🏍 XRE 300</button>
+        </div>
+
+        <div id="resultado" class="console-output">
+            Selecione um veículo...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
