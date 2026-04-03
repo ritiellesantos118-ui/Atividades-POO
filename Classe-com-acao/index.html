@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Carros</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .carro-container { margin-bottom: 20px; padding: 10px; border: 1px solid #f7fbfc; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <h2>Carros</h2>
+
+    <div class="carro-container">
+        <h3>Fusca Azul</h3>
+        <p>Velocidade: <strong id="vel-fusca">0</strong> km/h</p>
+        <button onclick="fusca.acelerar('vel-fusca')">Acelerar</button>
+        <button onclick="fusca.frear('vel-fusca')">Frear</button>
+        <button onclick="fusca.mostrarVelocidade()">Status</button>
+    </div>
+
+    <div class="carro-container">
+        <h3>Gol Quadrado</h3>
+        <p>Velocidade: <strong id="vel-gol">0</strong> km/h</p>
+        <button onclick="gol.acelerar('vel-gol')">Acelerar</button>
+        <button onclick="gol.frear('vel-gol')">Frear</button>
+        <button onclick="gol.mostrarVelocidade()">Status</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
