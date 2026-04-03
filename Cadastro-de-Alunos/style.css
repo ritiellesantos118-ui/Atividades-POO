@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdddfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: rgb(245, 205, 240);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(233, 39, 223, 0.1);
+    width: 300px;
+}
+
+h2 { color: #ee09c8; margin-top: 0; }
+
+label { display: block; margin-top: 10px; font-size: 0.9rem; color: #666; }
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #f004a1;
+    border-radius: 6px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #fa91da;
+    color: rgb(243, 6, 184);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #f688fa; }
+
+#resultado {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #f30ad4;
+    text-align: center;
+}
+
+.aprovado { color: #28a745; font-weight: bold; }
+.reprovado { color: #dc3545; font-weight: bold; }
