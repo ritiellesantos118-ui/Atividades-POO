@@ -1,0 +1,51 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #b144a831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: rgb(245, 201, 235);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 320px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #53053c;
+}
+
+.controle-quantidade {
+    margin: 20px 0;
+
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 60px;
+    border: 1px solid #b93291;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.total-destaque {
+    color: #63a161;
+    font-weight: 800;
+}
